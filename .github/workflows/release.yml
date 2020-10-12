@@ -20,6 +20,8 @@ jobs:
     - name: Use GitVersion
       id: gitversion # step id used as reference for output values
       uses: gittools/actions/gitversion/execute@v0.9.4
+      with:
+        additionalArguments: '--major-version-bump-message="from xario/major" --minor-version-bump-message="from xario/minor" --patch-version-bump-message="from xario/hotfix"'
     - run: |
         echo "Major: ${{ steps.gitversion.outputs.major }}"
         echo "Minor: ${{ steps.gitversion.outputs.minor }}"
