@@ -1,49 +1,5 @@
-branches:
-  hotfix:
-    regex: ^hotfix?[/-]
-    mode: ContinuousDelivery
-    tag: beta
-    increment: Patch
-    prevent-increment-of-merged-branch-version: false
-    track-merge-target: false
-    tracks-release-branches: false
-    is-release-branch: false
-    source-branches: ['master']
-  minor:
-    regex: ^minor?[/-]
-    mode: ContinuousDelivery
-    tag: ''
-    increment: Minor
-    prevent-increment-of-merged-branch-version: false
-    track-merge-target: false
-    tracks-release-branches: false
-    is-release-branch: false
-    source-branches: ['develop', 'master']
-  major:
-    regex: ^major?[/-]
-    mode: ContinuousDelivery
-    tag: ''
-    increment: Major
-    prevent-increment-of-merged-branch-version: false
-    track-merge-target: false
-    tracks-release-branches: false
-    is-release-branch: false
-    source-branches: ['develop']
-  master:
-    regex: ^master$
-    mode: ContinuousDelivery
-    tag: ''
-    increment: Patch
-    prevent-increment-of-merged-branch-version: true
-    track-merge-target: false
-    tracks-release-branches: false
-    is-release-branch: false
-  develop:
-    regex: ^develop$
-    mode: ContinuousDeployment
-    tag: unstable
-    increment: Minor
-    prevent-increment-of-merged-branch-version: false
-    track-merge-target: true
-    tracks-release-branches: true
-    is-release-branch: false
+mode: ContinuousDelivery
+
+major-version-bump-message: "major"
+minor-version-bump-message: "minor"
+patch-version-bump-message: "hotfix"
