@@ -6,7 +6,7 @@ patch-version-bump-message: 'hotfix'
 #assembly-file-versioning-scheme: MajorMinorPatchTag
 #assembly-informational-format: '{InformationalVersion}'
 #mode: ContinuousDelivery
-#increment: Inherit
+increment: Inherit
 #continuous-delivery-fallback-tag: ci
 #tag-prefix: '[vV]'
 #no-bump-message: '\+semver:\s?(none|skip)'
