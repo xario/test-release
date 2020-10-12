@@ -1,6 +1,6 @@
-major-version-bump-message: 'xario\/major'
-minor-version-bump-message: 'xario\/minor'
-patch-version-bump-message: 'xario\/hotfix'
+major-version-bump-message: 'xario/major'
+minor-version-bump-message: 'xario/minor'
+patch-version-bump-message: 'xario/hotfix'
 next-version: 1.0
 assembly-versioning-scheme: MajorMinorPatch
 assembly-file-versioning-scheme: MajorMinorPatchTag
