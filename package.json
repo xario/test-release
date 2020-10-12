@@ -1,4 +1,5 @@
 {
+  "name": "test-release",
   "devDependencies": {
     "auto": "^9.57.0"
   }
